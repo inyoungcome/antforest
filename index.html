@@ -3,68 +3,51 @@
  <head>
   <meta charset="utf-8" />
   <title>蚁人森林</title>
-<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" rel="stylesheet">
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 
-<script src="./js/bootstrap-datepicker.js"></script>
 <script src="./js/index.js"></script>
 <script src="./js/nebPay.js"></script>
-<link rel="stylesheet" href="./css/bootstrap-datepicker.css" type="text/css" />
  </head>
- <body style="background:url('./img/bg.jpg');background-size: cover;background-position: center center;">
+ <body style="background:url('./img/bg.png');background-size: cover;background-position: center center;">
   <div class="container" >
+    <div class="jumbotron">
+    <h1>蚂蚁森林</h1>
+    <p>绿色金融是一个政府和行业能听懂的高大上的东西，保护生态环境是每个人的业务和责任。通过给每个用户都开通一个碳账户，把每个人的绿色环保行为记录下来.</p>
+  </div>
+  <!-- <img src="./img/bg.png" class="img-circle" alt="Cinque Terre" width="304" height="236"> -->
    <div class="row clearfix">
     <div class="col-md-12 column">
-<!-- <div >
-     <blockquote>
-      <p><h1><font style="color:yellow"><b>想摆脱一个人的孤单旅行吗？</b></font></h1></p>
-      <ul>
-<li>
-同一个日期...
-</li>
-<li>
-同一个目的地...
-</li>
-<li>
-发现旅行中的朋友...
-</li>
-</ul>
-     </blockquote>
-</div> -->
 <div class="row clearfix">
 <div class="col-md-12 column">
 <div class="panel-group" id="panel-629835">
 <div class="panel panel-default">
 <div class="panel-heading">
-<a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-629835" href="#panel-element-844387">领养你的树苗</a>
+<a class="panel-title " data-toggle="collapse" data-parent="#panel-629835" href="#panel-element-844387">领养你的树苗</a>
 </div>
-<div id="panel-element-844387" class="panel-collapse collapse">
+<div id="panel-element-844387" class="panel-collapse in">
 <div class="panel-body">
 <form role="form">
-   <!--
-    <div class="form-group">
-         <label for="nasAddress">NAS Address</label>
-         <input type="text" class="form-control" id="nasAddress" />
-        </div>
--->
         <div class="form-group">
          <label for="treeName">树种</label>
-         <input type="text" class="form-control" id="treeName" />
+         <select class="form-control" id="treeName">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+         </select>
+         <!-- <input type="text" class="form-control" id="treeName" /> -->
         </div>
-<div class="form-group">
+  <div class="form-group">
 <label for="address">种植地址</label>
 <input type="text" class="form-control" id="address" />
 </div>
-
         <div class="form-group">
          <label for="walfare">公益组织</label>
          <input type="text" class="form-control" id="walfare" />
         </div>
-
-
-
-
         <button type="button" class="btn btn-default" id="savebutton">保存</button>
        </form>
 </div>
@@ -74,17 +57,19 @@
 <br>
 <div class="panel panel-default">
 <div class="panel-heading">
-<a class="panel-title" data-toggle="collapse" data-parent="#panel-629835" href="#panel-element-397706">发现树苗</a>
+<a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-629835" href="#panel-element-397706">发现树苗</a>
 </div>
-<div id="panel-element-397706" class="panel-collapse in">
+<div id="panel-element-397706" class="panel-collapse collapse">
 <div class="panel-body">
 <form role="form">
-
   <div class="form-group">
     <label for="id">树苗编号</label>
     <input type="text" class="form-control" id="id" />
   </div>
-  <button type="button" class="btn btn-default" id="searchbutton">发现</button>
+  <button type="button" class="btn btn-default" id="searchbutton">
+    <span class="glyphicon glyphicon-search" ></span> Search
+  </button>
+  <!-- <button type="button" class="btn btn-default" id="searchbutton">发现</button> -->
 </form>
 <div class="panel-body">
 
@@ -135,15 +120,5 @@
     </div>
 
   </div>
-
-
-  <script>
-$('#datepicker').datepicker({
-format: "yyyy-mm-dd"
-});
-$('#datepickerSearch').datepicker({
-format: "yyyy-mm-dd"
-});
-  </script>
  </body>
 </html>
