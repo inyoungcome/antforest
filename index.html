@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>蚁人森林</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<script src="./js/bootstrap-datepicker.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/nebPay.js"></script>
+<link rel="stylesheet" href="./css/bootstrap-datepicker.css" type="text/css" />
+ </head>
+ <body style="background:url('./img/bg.jpg');background-size: cover;background-position: center center;">
+  <div class="container" >
+   <div class="row clearfix">
+    <div class="col-md-12 column">
+<!-- <div >
+     <blockquote>
+      <p><h1><font style="color:yellow"><b>想摆脱一个人的孤单旅行吗？</b></font></h1></p>
+      <ul>
+<li>
+同一个日期...
+</li>
+<li>
+同一个目的地...
+</li>
+<li>
+发现旅行中的朋友...
+</li>
+</ul>
+     </blockquote>
+</div> -->
+<div class="row clearfix">
+<div class="col-md-12 column">
+<div class="panel-group" id="panel-629835">
+<div class="panel panel-default">
+<div class="panel-heading">
+<a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-629835" href="#panel-element-844387">领养你的树苗</a>
+</div>
+<div id="panel-element-844387" class="panel-collapse collapse">
+<div class="panel-body">
+<form role="form">
+   <!--
+    <div class="form-group">
+         <label for="nasAddress">NAS Address</label>
+         <input type="text" class="form-control" id="nasAddress" />
+        </div>
+-->
+        <div class="form-group">
+         <label for="treeName">树种</label>
+         <input type="text" class="form-control" id="treeName" />
+        </div>
+<div class="form-group">
+<label for="address">种植地址</label>
+<input type="text" class="form-control" id="address" />
+</div>
+
+        <div class="form-group">
+         <label for="walfare">公益组织</label>
+         <input type="text" class="form-control" id="walfare" />
+        </div>
+
+
+
+
+        <button type="button" class="btn btn-default" id="savebutton">保存</button>
+       </form>
+</div>
+</div>
+</div>
+
+<br>
+<div class="panel panel-default">
+<div class="panel-heading">
+<a class="panel-title" data-toggle="collapse" data-parent="#panel-629835" href="#panel-element-397706">发现树苗</a>
+</div>
+<div id="panel-element-397706" class="panel-collapse in">
+<div class="panel-body">
+<form role="form">
+
+  <div class="form-group">
+    <label for="id">树苗编号</label>
+    <input type="text" class="form-control" id="id" />
+  </div>
+  <button type="button" class="btn btn-default" id="searchbutton">发现</button>
+</form>
+<div class="panel-body">
+
+</div>
+<div class="panel-footer">
+
+<div class="row clearfix" >
+<div class="col-md-12 column">
+<span id="recordscount">0条记录</span>
+<table class="table table-condensed table-bordered">
+<thead>
+<tr>
+<th>
+树苗编号
+</th>
+<th>
+树种
+</th>
+<th>
+日期
+</th>
+<th>
+地址
+</th>
+<th>
+拥有者
+</th>
+<th>
+公益机构
+</th>
+</tr>
+</thead>
+<tbody id="searchresult">
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+     </div>
+
+    </div>
+
+  </div>
+
+
+  <script>
+$('#datepicker').datepicker({
+format: "yyyy-mm-dd"
+});
+$('#datepickerSearch').datepicker({
+format: "yyyy-mm-dd"
+});
+  </script>
+ </body>
+</html>
